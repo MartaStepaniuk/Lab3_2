@@ -1,14 +1,16 @@
-body, h1{
+body{
     margin: 0;
 }
 #container{
+    display: flex;
+    flex-wrap: wrap;
     font-family: Trebuchet MS, Arial, Times New Roman;
     font-weight: bold;
+    line-height: 57px;
     text-align: center;
-    line-height: 100px;
 }
 #text1, #img1{
-    width: 100%;
+    flex: 100%;
     height: 108px;
 }
 #text1{
@@ -22,11 +24,9 @@ body, h1{
 }
 #img2{
     background: lightgreen;
-    float: left;
-    width: 75%;
+    flex: 75%;
 }
 #text2{
     background: darkgreen;
-    float: right;
-    width: 25%;
+    flex: 25%;
 }
